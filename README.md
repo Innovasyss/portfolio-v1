@@ -1,21 +1,38 @@
+# 🌌 Bhavesh's Developer Portfolio
 
-<a href="https://youtu.be/moRqo158NGc?si=DAIbiOkKnHknEQVJ" target="_blank">
-  <img src="thumbnail.png" alt="Thumbnail"/>
-</a>
+Welcome to my personal developer portfolio — a place where I showcase my learning journey, skills, and real-world projects.
 
+## 👋 About Me
+
+Hey, I'm **Bhavesh**, a university student passionate about coding and continuous learning.  
+I’m currently exploring:
+
+- ✅ Python, SQL, and GUI development  
+- 🧠 Core programming languages like C and C++  
+- 🌐 Full-stack web development with HTML, CSS, JavaScript, React & MySQL  
+- 🎯 Building real, hands-on projects that reflect what I learn
+
+## 💡 Featured Projects
+
+Explore my key projects built with real technologies and practical applications.  
+Each one is a milestone in my learning journey — and I’m just getting started!
+
+- 🎮 **Animated Gaming Website**
+- 🧑‍💻 **Modern Portfolio Website**
+- 🎬 **Movie Landing Page**
+
+## 📫 Let's Connect
+
+Whether you're a fellow developer, recruiter, or just curious, feel free to reach out!
+
+- 📧 Email: `bhaveshwebsites@gmail.com`
+- 🌐 LinkedIn: [Bhavesh Bansod](#)
+- 📱 Phone: `+91 932 2475 609`  
+- 📺 YouTube | GitHub | Twitter — linked in the site
 
 ---
-## Introduction: 
 
-#### 🎥 Create the Ultimate Portfolio Website with Just HTML,CSS and JavaSctipt! 💻
+> 🚀 _This portfolio is still under development — you're currently viewing a live preview of something awesome in progress._
 
-#### Want to design a stunning portfolio website that’s responsive, modern, and minimalist? In this step-by-step tutorial, we’ll use only HTML and CSS to craft a visually appealing site that highlights your skills, projects, and creativity. 🌟
+Thanks for stopping by!
 
-#### From building the perfect navbar and styling a sleek header to creating a gallery for your work and adding smooth animations and hover effects, this video covers it all! Whether you’re a beginner or looking to sharpen your design skills, we’ll help you master flexbox, grid, and media queries for a truly responsive layout.
-
-
----
-## Watch the full tutorial on YouTub
-<a href="https://youtu.be/moRqo158NGc?si=DAIbiOkKnHknEQVJ">
-  <img src="youtube.png" alt="youtube"/>
-</a>

@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiladiCode</title>
+    <title>It's Bhavesh</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
+<!-- Development Notice Popup -->
+<div id="devPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; backdrop-filter: blur(8px); background: rgba(0, 0, 0, 0.6); z-index: 9999; display: flex; align-items: center; justify-content: center; animation: fadeIn 1s ease;">
+  <div style="background: rgba(18, 23, 32, 0.95); border: 1px solid #72a1de; padding: 30px 40px; border-radius: 15px; text-align: center; box-shadow: 0 0 20px rgba(114, 161, 222, 0.5); color: #ffffff; max-width: 90%; font-family: 'Poppins', sans-serif;" data-aos="zoom-in">
+    <h2 style="font-size: 24px; margin-bottom: 10px; color: #72a1de;">🚧 Under Development</h2>
+    <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px;">This website is currently in development.<br>You’re viewing a live preview — not the final version.</p>
+    <button onclick="document.getElementById('devPopup').style.display='none'" style="background-color: #72a1de; border: none; color: white; padding: 10px 25px; border-radius: 8px; font-size: 15px; cursor: pointer; transition: all 0.3s ease;">Okay, got it!</button>
+  </div>
+</div>
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
+
+
+
+
+
 <body>
     <div class="container">
         <video class="back-vid" autoplay loop muted plays-inline src="videos/galaxy.mp4"></video>
@@ -16,8 +37,8 @@
 
         <header data-aos="fade-down" data-aos-duration="2000">
             <div class="left">
-                <img src="images/miladicode.png" alt="logo">
-                <h2><span style="color: #72a1dea2;">Miladi</span>Code</h2>
+                <img src="images/logo.png" alt="logo">
+                <h2><span style="color: #72a1dea2;">Bhavesh</span>Code</h2>
             </div>
 
             <ul>
@@ -63,12 +84,13 @@
             <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
                 <div class="hero-info-title" >
                     <i class='bx bxl-sketch'></i>
-                    Front-end Developer Portfolio
+                    Beginner • Builder • Becoming
                 </div>
 
-                <h1 data-aos="fade-right" data-aos-duration="3000">Providing <span class="gradient">the best</span> Project <span class="gradient">Experience</span></h1>
+                <h1 data-aos="fade-right" data-aos-duration="3000">Learning by <span class="gradient">Building</span> Real <span class="gradient">Projects</span></h1>
+ 
 
-                <p>I'm a front-end developer with experience in Website, Mobile and Software development. Check out my projects and skills.</p>
+                <p>I’m a university student passionate about code and creativity. I learn by doing — and this site showcases my growth through hands-on projects.</p>
 
                 <button><i class='bx bx-send' ></i> Contact Me</button>
             </div>
@@ -84,22 +106,22 @@
             <h1 class="section-title autoDisplay">Hello,There👋</h1>
             <div class="info-cards">
                 <div class="card ">
-                    <h1>Hi there, I'm Milad</h1>
-                    <p>With 4 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic and responsive websites.</p>
+                    <h1>Hi there, I'm Bhavesh</h1>
+                    <p>I'm a 20-year-old university student who loves learning and building real-world projects using Python, SQL, and GUI apps. I'm here to grow — and show it.</p>
                 
                     <img src="images/grid1.png" alt="">
                 </div>
 
                 <div class="card">
                     <h1>Tech Stack</h1>
-                    <p>I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.</p>
+                    <p>"I’m skilled in Python, SQL, and GUI development. Currently learning C, C++, and exploring full-stack web development with HTML, CSS, JS, React, and MySQL."</p>
                 
                     <img src="images/grid2.png" alt="">
                 </div>
 
                 <div class="card">
                     <h1>I’m very flexible with time zone communications & locations</h1>
-                    <p>I'm based in Italy, Bari and open to remote work worldwide.</p>
+                    <p>I'm based in India and open to remote work worldwide.</p>
                 
                     <video src="videos/glob.mp4" autoplay loop muted plays-inline></video>
 
@@ -194,9 +216,9 @@
             <h1 class="section-title autoDisplay">Let's talk😊</h1>
 
             <div class="social-box autoBlur">
-                <a href="#"><i class='bx bxs-phone'></i> +39 111 222 444</a>
-                <a href="#"><i class='bx bxl-telegram' ></i> Contact Example.com</a>
-                <a href="#"><i class='bx bxl-linkedin-square' ></i> Contact Example.com</a>
+                <a href="#"><i class='bx bxs-phone'></i> +91 932 2475 609</a>
+                <a href="#"><i class='bx bxl-telegram' ></i> bhaveshwebsites@gmail.com</a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i> Bhavesh-Bansod</a>
                 <div class="social-icons">
                     <a href="#"><i class='bx bxl-youtube' ></i></a>
                     <a href="#"><i class='bx bxl-twitter' ></i></a>
@@ -205,7 +227,7 @@
             </div>
 
             <div class="contact-box autoBlur">
-                <p>Wheter you're looking to build a new website, improve your existing platform, or bring a unique project to file. i'm here to help.</p>
+                <p>"Working on something cool or want to connect? I’m always open to coding, collaboration, or a quick chat."</p>
             
                 <p>Full Name</p>
                 <input placeholder="Your Full name" type="full name">
@@ -222,7 +244,7 @@
         </section> 
 
         <section class="footer">
-            <h1>©️2025, Made with ❤️ by MiladiCode</h1>
+            <h1>©️2025, Made with ❤️ by Bhavesh</h1>
             <div class="box-icons">
                 <p><i class='bx bxl-youtube'></i></p>
                 <p><i class='bx bxl-github'></i></p>
