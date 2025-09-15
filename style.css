@@ -262,7 +262,7 @@ header ul a:hover{
     align-items: center;
     flex-direction: column;
     width: 80%;
-    margin-top: 100px;
+    margin-top: 1px;
 }
 
 .section-title{
@@ -384,7 +384,7 @@ header ul a:hover{
     position: relative;
     width: 80%;
     height: 100vh;
-    margin-top: 200px;
+    margin-top: 30px;
     margin-bottom: 250px;
 }
 
@@ -397,18 +397,14 @@ header ul a:hover{
     justify-content: center;
 }
 
-.project-vidbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    mix-blend-mode:exclusion;
-    position: relative;
-    cursor: pointer;
-    transition: 0.5s;
-    min-width: 400px;
-
+.project-vidbox {
+    width: 100%;
+    max-width: 450px; /* Controls how wide the image can go */
+    height: auto;
+    padding: 1px;
+    box-sizing: border-box;
 }
+
 
 .project-vidbox video{
     object-fit: cover;
@@ -417,6 +413,15 @@ header ul a:hover{
     border-radius: 20px;
     transition: 0.5s;
 }
+
+.project-vidbox img.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px lightgray;
+    object-fit: cover;
+}
+
 
 .project-card video:hover{
     box-shadow: 0 0 25px rgb(255, 255, 255);
@@ -474,17 +479,8 @@ header ul a:hover{
     height: 100px;
 }
 
-.hover-sign::before,
-.hover-sign::after {
-    content: "👆";
-    text-align: center;
-    position: absolute;
-    font-size: 50px;
-    top: 20%;
-    left: 40%;
-    border-radius: 40px;
-    animation: hover-animation 4s ease-in-out infinite;
-
+.project-vidbox.autoBlur {
+    backdrop-filter: none;
 }
 
 .hover-sign.active{
@@ -531,6 +527,7 @@ header ul a:hover{
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 300px;
 }
 
 .skills-box{
@@ -662,7 +659,7 @@ header ul a:hover{
 
 .contact-section h1{
     position: absolute;
-    top: 10%;
+    top: 1%;
     left: 40%;
 }
 
@@ -705,6 +702,20 @@ header ul a:hover{
     outline : none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.contact-box textarea{
+    padding: 7.5px 30px;
+    background-color: lightgray;
+    width: 80%;
+    height: 80px;
+    border: none;
+    outline : none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: inherit;
+    resize: none;
+    overflow-y: hidden;
 }
 
 .contact-box button{
@@ -1133,112 +1144,109 @@ header ul a:hover{
 }
 
 
-@media screen and (max-width: 480px) {
+/* Tablet and smaller screens */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: row;
+    padding: 10px 20px;
+  }
 
-    .hero .skills-video-box {
-        display: none;
-        
-    }
+  header ul {
+    display: none; /* hide desktop nav */
+  }
 
-    .blackhole-box {
-        overflow: hidden;
-    }
+  .menu-icon {
+    display: block; /* show hamburger */
+  }
 
-    .blackhole-box video {
-        width: 140%;
-        margin-top: -27%;
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
 
-    }
+  .hero-info h1 {
+    font-size: 22px;
+  }
 
-    .left {
-        scale: 0.9;
-        margin-left: -30px;
-    }
+  .skills-video-box {
+    width: 100%;
+    margin-top: 20px;
+  }
 
-    .left h2 {
-        font-size: 20px;
-    }
+  .info-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .hero {
-        scale: 0.9;
-    }
+  .project-card {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
 
-    .hero-info{
-        bottom: 15%;
-    }
+  .project-vidbox,
+  .project-info {
+    width: 100%;
+    padding: 0;
+  }
 
-    .hero-info h1{
-        font-size: 35px;
-    }
+  .skills-box {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .scroll-down{
-        bottom: 15%;
-        left: 60%;
-    }
+  .skills-box img {
+    max-width: 250px;
+  }
 
-    .section-title {
-        font-size: 25px;
-    }
+  .contact-section {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
 
-    .info-cards{
-        display: flex;
-        flex-direction: column;
-    }
+  .contact-section h1 {
+    position: static; /* remove absolute */
+    margin-bottom: 20px;
+  }
 
-    .card {
-        min-height: 20rem;
-    }
-
-    .card h1{
-        bottom: 30%;
-        font-size: 5px;
-    }
-
-    .project-card {
-        height: 50%;
-    }
-
-    .project-info p{
-        margin-bottom: 15px;
-    }
-
-    .project-info{
-        margin-left: -80px;
-    }
-
-    .skills-box{
-        height: 120vh;
-        margin-right: 30px;
-    }
-
-    .slider{
-        bottom: 0%;
-    }
-
-    .contact-section{
-        scale: 0.9;
-        height: 120vh;
-    }
-
-    .contact-section .section-title {
-        top: -30px;
-        left: 25%;
-    }
-
-    .footer{
-        padding: 15px;
-    }
-
-    .footer h1{
-        max-width: 150px;
-    }
-
-    .footer .box-icons{
-        gap: 10px;
-    }
-
-
+  .social-box a {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
+
+/* Very small devices */
+@media screen and (max-width: 480px) {
+  .hero-info h1 {
+    font-size: 18px;
+  }
+
+  .project-info h1 {
+    font-size: 18px;
+  }
+
+  .skills-box img {
+    max-width: 200px;
+  }
+
+  .contact-box input,
+  .contact-box textarea {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    height: auto;
+    padding: 15px 10px;
+  }
+}
+
 
 
 
