@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<!-- Development Notice Popup -->
 <div id="devPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; backdrop-filter: blur(8px); background: rgba(0, 0, 0, 0.6); z-index: 9999; display: flex; align-items: center; justify-content: center; animation: fadeIn 1s ease;">
   <div style="background: rgba(18, 23, 32, 0.95); border: 1px solid #72a1de; padding: 30px 40px; border-radius: 15px; text-align: center; box-shadow: 0 0 20px rgba(114, 161, 222, 0.5); color: #ffffff; max-width: 90%; font-family: 'Poppins', sans-serif;" data-aos="zoom-in">
     <h2 style="font-size: 24px; margin-bottom: 10px; color: #72a1de;">🚧 Under Development</h2>
@@ -137,40 +136,38 @@
             <h1 class="section-title autoDisplay">My Projects 👨‍💻</h1>
 
             <div class="project-card">
-                <div class="project-vidbox autoBlur" >
-                    <img src="images/app1.png" alt="App 1" class="project-img">
+                <div class="project-vidbox" >
+                    <img src="images/expensetracker.png" alt="expensetracker" class="project-img">
                 </div>
                 <div class="project-info fadein-left">
-                    <h1>App 1 Name</h1>
-                    <p>Short description of the app goes here. You can update this later.</p>
+                    <h1>App: ExpenseTracker</h1>
+                    <p>An app to track expenses and manage budgets effectively.</p>
                     <button><i class='bx bx-download'></i> Download</button>
             </div>
             </div>
 
             <div class="project-card">
-                <div class="project-vidbox autoBlur">
-                    <img src="images/app2.png" alt="App 2" class="project-img">
+                <div class="project-vidbox">
+                    <video src="videos/CompareCart.mp4" alt="App 2" class="project-img" autoplay loop muted plays-inline></video>
                 </div>
                 <div class="project-info fadein-left">
-                    <h1>App 2 Name</h1>
-                    <p>Short description of the app goes here. You can update this later.</p>
-                    <button><i class='bx bx-download'></i> Download</button>
+                    <h1>Website: CompareCart</h1>
+                    <p>A website to compare products and find the best deals.</p>
+                    <button><i class='bx bx-download'></i> Check out</button>
                 </div>
             </div>
 
-    <!-- App 3 -->
             <div class="project-card">
-                <div class="project-vidbox autoBlur">
-                    <img src="images/app3.png" alt="App 3" class="project-img">
+                <div class="project-vidbox">
+                    <video src="videos/MinecraftClone.mp4.mov" alt="App 3" class="project-img" autoplay loop muted plays-inline></video>
                 </div>
                 <div class="project-info fadein-left">
-                    <h1>App 3 Name</h1>
-                    <p>Short description of the app goes here. You can update this later.</p>
+                    <h1>Game: Minecraft Clone</h1>
+                    <p>A clone of the popular game Minecraft, with basic features.</p>
                     <button><i class='bx bx-download'></i> Download</button>
                 </div>
             </div>
 
-    <!-- View More Button -->
             <div class="view-more" style="text-align: center; margin-top: 30px;">
                 <a href="projects.html">
                     <button><i class='bx bx-right-arrow-circle'></i> View More</button>
@@ -230,17 +227,19 @@
 
             <div class="contact-box autoBlur">
                 <p>"Working on something cool or want to connect? I’m always open to coding, collaboration, or a quick chat."</p>
-            
-                <p>Full Name</p>
-                <input placeholder="Your Full name" type="full name">
+    
+                <form action="https://formspree.io/f/mwpnbewo" method="POST">
+                    <p>Full Name</p>
+                    <input name="name" placeholder="Your Full name" type="text" required>
 
-                <p>Email Address</p>
-                <input placeholder="Your Email" type="Contact">
+                    <p>Email Address</p>
+                    <input name="email" placeholder="Your Email" type="email" required>
 
-                <p>Your Message</p>
-                <input  class="input-message" type="contact" placeholder="shaire your thoughts...">
+                    <p>Your Message</p>
+                    <textarea class="input-message" name="message" placeholder="Share your thoughts..." required></textarea>
 
-                <button>Send Message <i class='bx bx-mail-send'></i></button>
+                    <button type="submit">Send Message <i class='bx bx-mail-send'></i></button>
+                </form>
             </div>
         
         </section> 
@@ -260,6 +259,16 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script >
       AOS.init();
+    </script>
+
+    <script>
+      const textarea = document.querySelector(".contact-box textarea");
+      if (textarea) {
+        textarea.addEventListener("input", () => {
+          textarea.style.height = "auto"; 
+          textarea.style.height = textarea.scrollHeight + "px";
+        });
+      }
     </script>
 </body>
 </html>
